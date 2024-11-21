@@ -68,6 +68,7 @@ func parseTransactionHandler(c *gin.Context) {
 		"swapData":        swapData,
 		"slot":            tx.Slot,
 		"blockTime":       tx.BlockTime,
+		"fee":             tx.Meta.Fee,
 	}
 
 	// Respond with JSON
