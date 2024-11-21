@@ -66,6 +66,8 @@ func parseTransactionHandler(c *gin.Context) {
 	response := gin.H{
 		"transactionData": transactionData,
 		"swapData":        swapData,
+		"slot":            tx.Slot,
+		"blockTime":       tx.BlockTime,
 	}
 
 	// Respond with JSON

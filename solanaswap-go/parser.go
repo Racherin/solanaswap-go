@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 	"time"
-
 	"github.com/gagliardetto/solana-go"
 	"github.com/gagliardetto/solana-go/rpc"
 	"github.com/sirupsen/logrus"
@@ -112,6 +111,7 @@ type SwapInfo struct {
 	Signatures []solana.Signature
 	AMMs       []string
 	Timestamp  time.Time
+	Slot	uint64
 
 	TokenInMint     solana.PublicKey
 	TokenInAmount   uint64
